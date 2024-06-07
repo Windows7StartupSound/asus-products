@@ -1,0 +1,83 @@
+html, body {
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: linear-gradient(to top, #121212, #f0f0f0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #323232;
+    z-index: 1000;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title img {
+    margin-right: 10px;
+}
+
+.title > div {
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+nav > .links > a {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.2s ease; 
+}
+
+nav > .links > a:hover {
+    background-color: #86868679;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+.mainStuff > .info {
+    position: relative;
+    margin-top: 20px;
+    color: white;
+    background-color: #323232;
+    border-radius: 20px;
+}
+
+.mainStuff > .info > p {
+    margin: 20px 20px;
+}
+
+.mainStuff {
+    display: inline-flex;
+}
+
+.mainStuff > .product > img {
+    margin: 5px 5px;
+}
+
+iframe {
+    border-radius: 20px;
+    display: block;
+    margin: 20px auto;
+}

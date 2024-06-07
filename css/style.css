@@ -1,0 +1,99 @@
+html, body {
+    height: 100%;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: linear-gradient(to top, #121212, #f0f0f0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #323232;
+    z-index: 1000;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title img {
+    margin-right: 10px;
+}
+
+.title > div {
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+nav > .links > a {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.2s ease; 
+}
+
+nav > .links > a:hover {
+    background-color: #86868679;
+}
+
+.text {
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    position: absolute;
+    background: #323232;
+    border-radius: 20px;
+    color: white;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    list-style: none;
+}
+
+.products > .product {
+    background-color: #3e3e3e;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.2s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.75);
+}
+
+
+.products > .product > a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.products > .product > a > .image {
+    height: 200px;
+    padding: 10px;
+    background: linear-gradient(to top, #3e3e3e, #f0f0f0);
+    background-size: auto;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.products > .product:hover {
+    transform: scale(110%);
+}
